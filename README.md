@@ -8,11 +8,42 @@ To write a program to predict the marks scored by a student using the simple lin
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. Store data in a structured format (e.g., CSV, DataFrame).
-2. Use a Simple Linear Regression model to fit the training data.
-3. Use the trained model to predict values for the test set.
-4.Evaluate performance using metrics like Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE). 
+1. Import necessary Python libraries for data handling, numerical computations, visualization, and machine learning.
+2. Read the CSV file (student_scores.csv) into a DataFrame.
+3. View the first few and last few rows of the dataset to understand its structure.
+4. Separate the dataset into independent (x) and dependent (y) variables:
+   
+      x → input feature(s) (Hours studied).
+   
+      y → target/output (Scores obtained).
+   
+5. Split the dataset into training and testing sets
 
+      test_size = 1/3 → 33% of data will be used for testing.
+   
+      random_state = 0 → ensures reproducibility.
+   
+6. Create and train a Linear Regression model on the training data.
+7. Use the trained model to predict scores for the test dataset.
+8. Calculate performance metrics:
+    
+      Mean Squared Error (MSE).
+   
+      Mean Absolute Error (MAE).
+   
+      Root Mean Squared Error (RMSE).
+   
+9. Plot the Training set:
+    
+      Scatter plot of actual points.
+    
+      Line plot of predicted regression line.
+    
+10. Plot the Testing set:
+    
+      Scatter plot of actual points.
+       
+      Line plot of predicted regression line based on test data.
 ## Program:
 ```
 /*
